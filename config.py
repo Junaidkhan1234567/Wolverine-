@@ -24,7 +24,7 @@ class Rkn_Bots(object):
     
     # database config
     DB_NAME = os.environ.get("DB_NAME", "AutoCaption_V05_Bot")     
-    DB_URL = os.environ.get("DB_URL", "")
+    DB_URL = os.environ.get("DB_URL", "mongodb+srv://gekasi8728:kingkhan@cluster0.ilgcdab.mongodb.net/?retryWrites=true&w=majority")
 
     #caption
     DEF_CAP = os.environ.get("DEF_CAP",
