@@ -65,7 +65,9 @@ async def start_cmd(bot, message):
         reply_markup=types.InlineKeyboardMarkup([[
             types.InlineKeyboardButton('Uᴩᴅᴀᴛᴇꜱ', url='https://t.me/+nvmpM5XeI9I0NTk1'),
             types.InlineKeyboardButton('Sᴜᴩᴩᴏʀᴛ', url='https://t.me/+AoC-3ybhhGdiYjE1')
-        ]]))
+            ],[
+            types.InlineKeyboardButton('🔥 Source Code 🔥', url='https://github.com/Junaidkhan1234567/Rkn-AutoCaptionBot.git')
+    ]]))
     
 
 
