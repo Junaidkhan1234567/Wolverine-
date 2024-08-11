@@ -28,7 +28,7 @@ class Rkn_Bots(object):
 
     #caption
     DEF_CAP = os.environ.get("DEF_CAP",
-                             "<b><a href='telegram.me/Rkn_Bots'>{file_name} Telegram : @RknDeveloper\n\nForward the file before Downloading.</a></b>",
+                             "<b><a href='telegram.me/WOLVERIN_P'>{file_name} Telegram : @WOLVERIN_P\n\nForward the file before Downloading.</a></b>",
     )
 
     #sticker Id
