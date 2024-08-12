@@ -14,7 +14,7 @@ class Rkn_Bots(object):
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 
     #start_pic
-    RKN_PIC = os.environ.get("RKN_PIC", "https://telegra.ph/file/eb788fab625ad72735910.jpg")
+    RKN_PIC = os.environ.get("RKN_PIC", "https://telegra.ph/file/43edc6385e8008b1fcca3.jpg")
 
 
     # wes response configuration
