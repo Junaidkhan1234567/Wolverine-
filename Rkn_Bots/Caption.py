@@ -65,7 +65,10 @@ async def start_cmd(bot, message):
         reply_markup=types.InlineKeyboardMarkup([[
             types.InlineKeyboardButton('Uᴩᴅᴀᴛᴇꜱ', url='https://t.me/wolverine273'),
             types.InlineKeyboardButton('Sᴜᴩᴩᴏʀᴛ', url='https://t.me/WOLVERIN_P')
-        ]]))
+            ],[
+            types.InlineKeyboardButton('➕ Add to Your Channel', url='https://t.me/YourBotUsername?startchannel=true')                  
+            
+            ]))
     
 
 
