@@ -62,13 +62,16 @@ async def start_cmd(bot, message):
     await insert(user_id)
     await message.reply_photo(photo=Rkn_Bots.RKN_PIC,
         caption=f"<b>Hey, {message.from_user.mention}\n\nI'm an auto-caption bot. I automatically edit captions for videos, audio files, and documents posted on channels.\n\nuse <code>/set_caption</code> to set caption\nUse<code>/delcaption</code> To delete caption and set caption to default.\n\nNote:All commands works on channels only</b>",
-        reply_markup=types.InlineKeyboardMarkup([[
+        reply_markup=types.InlineKeyboardMarkup([
+        [
             types.InlineKeyboardButton('Uᴩᴅᴀᴛᴇꜱ', url='https://t.me/wolverine273'),
             types.InlineKeyboardButton('Sᴜᴩᴩᴏʀᴛ', url='https://t.me/WOLVERIN_P')
-            ],[
-            types.InlineKeyboardButton('➕ Add to Your Channel', url='https://t.me/YourBotUsername?startchannel=true')                  
-            
-            ]))
+        ],
+        [
+            types.InlineKeyboardButton('➕ Add to Your Channel', url=f'https://t.me/{bot_username}?startchannel=true')
+        ]
+    ])
+                             )
     
 
 
