@@ -44,5 +44,4 @@ def add_user(user_id: int):
         users_coll.insert_one({"user_id": user_id})
 
 def get_all_user_ids():
-    """सभी user_ids की list लौटाओ"""
     return [d["user_id"] for d in users_coll.find({}, {"user_id": 1})]
