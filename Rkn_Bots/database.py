@@ -6,21 +6,6 @@
 
 import motor.motor_asyncio
 from config import Rkn_Bots
-from pymongo import MongoClient
-from config import DB_URL, DB_NAME
-
-client = MongoClient(DB_URL)
-db = client[DB_NAME]
-users_coll = db["users"]
-
-def add_user(user_id):
-    """अगर user नहीं है तो add कर दो"""
-    if users_coll.count_documents({"user_id": user_id}, limit=1) == 0:
-        users_coll.insert_one({"user_id": user_id})
-
-def get_all_user_ids():
-    """सभी user_ids की list लौटाए"""
-    return [d["user_id"] for d in users_coll.find({}, {"user_id": 1})]
 
 client = motor.motor_asyncio.AsyncIOMotorClient(Rkn_Bots.DB_URL)
 db = client[Rkn_Bots.DB_NAME]
